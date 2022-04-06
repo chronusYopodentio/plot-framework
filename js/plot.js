@@ -1,4 +1,5 @@
 plot = {
+	parentDiv: "div#content",
 	block1: 
 	{
 		dlg: 
@@ -11,7 +12,9 @@ plot = {
 		btn: 
 		{
 			text: "clicky",
-			onClick: function(){alert(0);}
+			onClick: function(){
+				transition(plot.parentDiv, plot.block2);
+			}
 		}
 	},
 

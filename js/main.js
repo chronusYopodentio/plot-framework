@@ -1,3 +1,8 @@
+let PARENT_DIV = 'div#content';
+function engine(){
+	boxLoader(plot.block1, PARENT_DIV);
+
+}
 $(function() {
-	boxLoader(plot.block1, "div#wrapper");
+	engine();
 });
